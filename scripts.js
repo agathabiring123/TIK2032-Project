@@ -13,3 +13,14 @@
   // Update setiap detik
   setInterval(updateClock, 1000);
 
+  const quotes = [
+    "effort is attractive🖐️",
+    "eat well, sleep well, rest well🚀",
+    "everyday is a great day🌟",
+    "keep growing, stay kiyowo!🦄",
+  ];
+  
+  const random = Math.floor(Math.random() * quotes.length);
+  document.getElementById("quote").textContent = quotes[random];
+
+  
