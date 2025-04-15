@@ -1,0 +1,224 @@
+/* styles.css - Modern Purple Theme with Enhanced Font Stacks */
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+body {
+    background: url('bintank.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+
+/* Heading Font Stack */
+h1, h2, h3 {
+    font-family: Montserrat, 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    color: #4a148c;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 30px 0;
+    color: #6a0dad;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Navigation Font */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    position: relative; /* kalau sebelumnya absolute, ubah jadi relative */
+    top: 0;
+}
+
+
+/* Article/Section Font */
+section, article {
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+
+/* Contact Info Font */
+.contact-info {
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, rgba(106,13,173,0.05) 0%, rgba(156,39,176,0.05) 100%);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(106,13,173,0.1);
+}
+
+/* Code Blocks (if any) */
+code, pre {
+    font-family: 'SF Mono', 'Roboto Mono', 'Courier New', monospace;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Rest of your existing styles remain unchanged below this line */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #9c27b0, #6a0dad);
+    border-radius: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, #9c27b0, #6a0dad) 1;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #9c27b0, #6a0dad);
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: #6a0dad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #6a0dad;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+
+nav a:hover {
+    color: white;
+    background-color: #6a0dad;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+
+nav a:hover {
+    background-color: #6a0dad;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(106,13,173,0.3);
+}
+
+nav a:not(:last-child)::after {
+    content: "•";
+    color: #ba68c8;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(106,13,173,0.5), rgba(0,0,0,0));
+    margin: 25px 0;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #6a0dad;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(106,13,173,0.15);
+}
+
+.contact-info p {
+    padding: 10px 0;
+    border-bottom: 1px dashed #e1bee7;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    
+    nav a:not(:last-child)::after {
+        content: none;
+    }
+
+
+      
+}
+
+#clock {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a0dad; /* ungu gelap */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #dab6fc;
+    border-radius: 12px;
+    background-color: rgba(107, 52, 236, 0.2);
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(4px);
+  }
+  
