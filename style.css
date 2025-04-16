@@ -1,5 +1,3 @@
-/* styles.css - Modern Purple Theme with Enhanced Font Stacks */
-/* Global Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,8 +18,6 @@ body {
     font-size: 1rem;
 }
 
-
-/* Heading Font Stack */
 h1, h2, h3 {
     font-family: Montserrat, 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
     color: #4a148c;
@@ -40,25 +36,22 @@ h1 {
     padding-bottom: 15px;
 }
 
-/* Navigation Font */
 nav {
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 20px 0;
-    position: relative; /* kalau sebelumnya absolute, ubah jadi relative */
+    position: relative;
     top: 0;
 }
 
 
-/* Article/Section Font */
 section, article {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.8;
     letter-spacing: 0.2px;
 }
 
-/* Contact Info Font */
 .contact-info {
     font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, rgba(106,13,173,0.05) 0%, rgba(156,39,176,0.05) 100%);
@@ -67,12 +60,10 @@ section, article {
     border: 1px solid rgba(106,13,173,0.1);
 }
 
-/* Code Blocks (if any) */
 code, pre {
     font-family: 'SF Mono', 'Roboto Mono', 'Courier New', monospace;
 }
 
-/* Responsive Font Sizes */
 @media (max-width: 768px) {
     body {
         font-size: 0.95rem;
@@ -87,7 +78,6 @@ code, pre {
     }
 }
 
-/* Rest of your existing styles remain unchanged below this line */
 h1::after {
     content: '';
     position: absolute;
@@ -208,7 +198,7 @@ section:hover {
 #clock {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #6a0dad; /* ungu gelap */
+    color: #6a0dad; 
     text-align: center;
     margin-top: 20px;
     padding: 10px;
@@ -225,10 +215,10 @@ section:hover {
   section {
     margin: 40px auto;
     padding: 20px 30px;
-    background-color: rgba(255, 255, 255, 0.4); /* lebih transparan */
+    background-color: rgba(255, 255, 255, 0.4); 
     border-radius: 16px;
     box-shadow: 0 3px 12px rgba(180, 140, 160, 0.2);
-    width: 90%;                /* Lebar tetap seperti sebelumnya */
+    width: 90%;                
     max-width: 1000px;
     text-align: center;
     display: flex;
