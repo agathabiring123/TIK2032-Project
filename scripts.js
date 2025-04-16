@@ -7,10 +7,8 @@
     document.getElementById('clock').textContent = timeString;
   }
 
-  // Jalankan sekali saat halaman dimuat
   updateClock();
 
-  // Update setiap detik
   setInterval(updateClock, 1000);
 
   const quotes = [
