@@ -16,6 +16,7 @@
     "eat well, sleep well, rest well🚀",
     "everyday is a great day🌟",
     "keep growing, stay kiyowo!🦄"
+    
   ];
   
   const random = Math.floor(Math.random() * quotes.length);
